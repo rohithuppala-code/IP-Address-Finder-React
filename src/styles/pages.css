@@ -1,0 +1,184 @@
+/* Common page styles */
+.page-with-bg {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: var(--space-4);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--text-primary);
+}
+
+.page-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.97));
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.page-overlay .container {
+  z-index: 2;
+  position: relative;
+}
+
+/* Home page styles */
+.home-page {
+  background-image: url('https://kvadrat.az/uploads/articles/66eb19c14342b.png');
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-5) 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: var(--space-2);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto var(--space-4) auto;
+}
+
+.features-grid {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+.feature-card {
+  flex: 1;
+  max-width: 400px;
+  background-color: white;
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  margin-bottom: var(--space-2);
+}
+
+.feature-card h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-2);
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.feature-link {
+  margin-top: auto;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.feature-card:hover .feature-link {
+  color: var(--primary-dark);
+}
+
+/* My IP page styles */
+.my-ip-page {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dZK_Z1J9elS5z8QvpqVd8FNlJa4m6Ti8xdgHI7FhPqpvvDi-wKaG6tQ-N0StZ3bzhcc&usqp=CAU');
+}
+
+.content-box {
+  max-width: 700px;
+  margin: var(--space-5) auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-box h1 {
+  color: var(--primary-color);
+}
+
+.content-box p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+
+/* Location IP page styles */
+.location-ip-page {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dZK_Z1J9elS5z8QvpqVd8FNlJa4m6Ti8xdgHI7FhPqpvvDi-wKaG6tQ-N0StZ3bzhcc&usqp=CAU');
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.25rem;
+  }
+  
+  .content-box {
+    margin: var(--space-4) auto;
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .page-with-bg {
+    padding-top: 70px;
+  }
+}
