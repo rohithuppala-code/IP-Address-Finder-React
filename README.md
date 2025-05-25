@@ -8,12 +8,11 @@ A React-based web application to:
 - Get location-based IP information
 
 Built with `React Router DOM` for navigation and `Lucide React` for icons.(installation dependencies)
+
+
 2. 📧 PHP Mail Sender using `mail()` Function (XAMPP + Gmail SMTP)
 
 This project demonstrates how to send an email using PHP’s built-in `mail()` function on a local server (XAMPP), configured with Gmail SMTP. It includes the source code (`mail.php`), output screenshots, and all necessary setup instructions.
-
----
-
 
 ---
 
@@ -54,5 +53,30 @@ src/
 │ └── output_mailbox.png # Screenshot of the received email
 
 
+## ⚙️ Setup Instructions (XAMPP + Gmail)
+(
+1. **Enable Gmail App Passwords**  
+   - Turn on 2-Step Verification in Gmail  
+   - Go to [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)  
+   - Generate an App Password for "Mail" → "XAMPP Mail"  
+   - Copy the 16-character password
 
+2. **Update `php.ini`** (`C:\xampp\php\php.ini`)  
+    [mail function]
+    SMTP = smtp.gmail.com
+    smtp_port = 587
+    sendmail_from = yourgmail@gmail.com
+    sendmail_path = "C:\xampp\sendmail\sendmail.exe -t"
+
+3. **Update `sendmail.ini`** (`C:\xampp\sendmail\sendmail.ini`)  
+    smtp_server=smtp.gmail.com
+    smtp_port=587
+    smtp_ssl=tls
+    auth_username=yourgmail@gmail.com
+    auth_password=your_app_password
+    from=yourgmail@gmail.com
+  
+  📌 Replace your_app_password with the 16-digit app password from Gmail.
+
+5. **Restart Apache** in the XAMPP Control Panel
 
