@@ -8,6 +8,12 @@ A React-based web application to:
 - Get location-based IP information
 
 Built with `React Router DOM` for navigation and `Lucide React` for icons.(installation dependencies)
+2. 📧 PHP Mail Sender using `mail()` Function (XAMPP + Gmail SMTP)
+
+This project demonstrates how to send an email using PHP’s built-in `mail()` function on a local server (XAMPP), configured with Gmail SMTP. It includes the source code (`mail.php`), output screenshots, and all necessary setup instructions.
+
+---
+
 
 ---
 
@@ -42,4 +48,11 @@ src/
 ├── App.css
 ├── index.css
 └── main.jsx # App entry point
+├── Task 2(mail-php)
+│ ├── mail.php # Main PHP script to send the email
+│ ├── output_webpage.png # Screenshot of the webpage result
+│ └── output_mailbox.png # Screenshot of the received email
+
+
+
 
