@@ -25,6 +25,7 @@ This project demonstrates how to send an email using PHP’s built-in `mail()` f
 ---
 
 ## 📁 Project Structure
+```
 src/
 ├── assets
 ├── components
@@ -52,7 +53,7 @@ src/
 │ ├── output_webpage.png # Screenshot of the webpage result
 │ └── output_mailbox.png # Screenshot of the received email
 
-
+```
 ## ⚙️ Setup Instructions (XAMPP + Gmail)
 (
 1. **Enable Gmail App Passwords**  
@@ -78,5 +79,5 @@ src/
   
   📌 Replace your_app_password with the 16-digit app password from Gmail.
 
-5. **Restart Apache** in the XAMPP Control Panel
+4. **Restart Apache** in the XAMPP Control Panel
 
