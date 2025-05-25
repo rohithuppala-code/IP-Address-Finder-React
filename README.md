@@ -1,4 +1,4 @@
-WEB TASKS
+##WEB TASKS
 
 1.IP ADDRESS FINDER
 
@@ -54,8 +54,8 @@ src/
 │ └── output_mailbox.png # Screenshot of the received email
 
 ```
-## ⚙️ Setup Instructions (XAMPP + Gmail)
-(
+## ⚙️ Setup Instructions for Task 2(XAMPP + Gmail)
+
 1. **Enable Gmail App Passwords**  
    - Turn on 2-Step Verification in Gmail  
    - Go to [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)  
