@@ -81,3 +81,11 @@ src/
 
 4. **Restart Apache** in the XAMPP Control Panel
 
+
+
+
+3. Pizza Runner - MySQL CaseStudy
+This project explores a fictional pizza delivery business called Pizza Runner.
+Using MySQL, we cleaned, transformed, and analysed the raw data to uncover insights inot customer behavior, runner performance and operational efficiency.
+The case study focuses on SQL skills such as data cleaning,joins,filtering,aggregation and subqueries.
+
